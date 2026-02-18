@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Madueke P.O - DevOps Portfolio</title>
+    <title>P O Madueke - DevOps Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,33 +11,39 @@
             margin: 0;
             padding: 0;
             color: #333;
+            line-height: 1.6;
         }
         header {
             background-color: #1e90ff;
             color: white;
-            padding: 30px 20px;
+            padding: 40px 20px;
             text-align: center;
         }
         header h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 2.8em;
         }
         header p {
             margin: 5px 0 0;
             font-size: 1.2em;
         }
         section {
-            max-width: 800px;
-            margin: 30px auto;
+            max-width: 900px;
+            margin: 40px auto;
             padding: 0 20px;
         }
         h2 {
             color: #1e90ff;
-            margin-top: 40px;
+            border-bottom: 2px solid #1e90ff;
+            padding-bottom: 5px;
         }
         ul {
             list-style: square;
             padding-left: 20px;
+        }
+        a {
+            color: #1e90ff;
+            text-decoration: none;
         }
         footer {
             text-align: center;
@@ -45,43 +51,63 @@
             background: #ddd;
             margin-top: 40px;
         }
-        a {
-            color: #1e90ff;
-            text-decoration: none;
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2em;
+            }
+            section {
+                margin: 20px auto;
+            }
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>P.O Madueke</h1>
-    <p>DevOps Engineer | Cloud Enthusiast</p>
+    <h1>PO Madueke</h1>
+    <p>DevOps Engineer | Cloud & AWS Enthusiast</p>
+    <p>Email: <a href="mailto:youremail@example.com">pomadueke@devopspomadueke@xyz.com</a> | 
+       LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a> | 
+       GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a>
+    </p>
 </header>
 
 <section>
     <h2>About Me</h2>
-    <p>I am a DevOps enthusiast with hands-on experience deploying web applications on AWS EC2, configuring Nginx, securing sites with SSL, and managing multi-site deployments. Passionate about cloud technologies, automation, and continuous delivery.</p>
+    <p>
+        I am a DevOps enthusiast with hands-on experience deploying web applications on AWS EC2, configuring Nginx, securing sites with SSL, and managing multi-site deployments. I am passionate about cloud technologies, automation, and continuous delivery.
+    </p>
 </section>
 
 <section>
     <h2>Skills</h2>
     <ul>
         <li>AWS EC2, Elastic IP, Security Groups</li>
-        <li>Nginx Configuration & Multi-site Hosting</li>
+        <li>Nginx multi-site hosting</li>
         <li>SSL/HTTPS with Let’s Encrypt</li>
         <li>Linux Server Administration</li>
-        <li>Git/GitHub Version Control & Auto-deploy</li>
-        <li>Basic CI/CD Workflows</li>
-        <li>Cloud Networking, DNS, and Domain Management</li>
+        <li>Git/GitHub + SSH deployment</li>
+        <li>CI/CD / Auto-deploy scripts</li>
+        <li>DNS & Domain Management</li>
+        <li>Basic Cloud Networking</li>
     </ul>
 </section>
 
 <section>
     <h2>Projects</h2>
     <ul>
-        <li>Hosted multiple static sites with SSL on a single EC2 instance.</li>
-        <li>Configured Elastic IPs and domain DNS to serve professional websites.</li>
-        <li>Implemented GitHub auto-deploy pipelines for continuous updates.</li>
+        <li>Hosted 2 multi-site websites on a single EC2 instance with SSL.</li>
+        <li>Configured GitHub auto-deploy via SSH for seamless updates.</li>
+        <li>Built a professional static CV website hosted on AWS EC2.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Certifications / Education</h2>
+    <ul>
+        <li>AWS Certified Cloud Practitioner (In Progress)</li>
+        <li>Linux Server Administration Fundamentals</li>
+        <li>Web Hosting & Cloud Deployment Projects</li>
     </ul>
 </section>
 
@@ -89,13 +115,4 @@
     <h2>Contact</h2>
     <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
     <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
-    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-</section>
-
-<footer>
-    &copy; 2026 FNG | DevOps Portfolio
-</footer>
-
-</body>
-</html>
-
+    <p>
