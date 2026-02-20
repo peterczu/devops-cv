@@ -1,130 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>P O Madueke - DevOps Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f4f9;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            line-height: 1.6;
-        }
-        header a {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomadueke DevOps CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #007bff;
+      --gradient: linear-gradient(90deg, #007bff, #00d4ff);
+      --bg: #f4f7f8;
+      --card: #fff;
+      --shadow: rgba(0,0,0,0.1);
+    }
 
-header a:hover {
-    text-decoration: underline;
-}
+    * { box-sizing: border-box; margin:0; padding:0; }
 
-        header {
-            background-color: #1e90ff;
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.8em;
-        }
-        header p {
-            margin: 5px 0 0;
-            font-size: 1.2em;
-        }
-        section {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-        h2 {
-            color: #1e90ff;
-            border-bottom: 2px solid #1e90ff;
-            padding-bottom: 5px;
-        }
-        ul {
-            list-style: square;
-            padding-left: 20px;
-        }
-        a {
-            color: #1e90ff;
-            text-decoration: none;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #ddd;
-            margin-top: 40px;
-        }
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 2em;
-            }
-            section {
-                margin: 20px auto;
-            }
-        }
-    </style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    header {
+      background: var(--gradient);
+      color: #fff;
+      padding: 60px 20px 40px 20px;
+      text-align: center;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+    }
+
+    header h1 { font-size: 3rem; margin-bottom: 10px; }
+    header p { font-size: 1.2rem; }
+
+    .container { max-width: 900px; margin: -30px auto 40px; padding: 0 20px; }
+
+    .card {
+      background: var(--card);
+      border-radius: 12px;
+      box-shadow: 0 8px 20px var(--shadow);
+      padding: 30px 40px;
+      margin-bottom: 30px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.8s forwards;
+    }
+
+    @keyframes fadeInUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h2 { color: var(--primary); font-size: 1.8rem; margin-bottom: 10px; }
+    h3 { font-size: 1.2rem; margin: 10px 0; }
+
+    .section-divider {
+      height: 3px;
+      width: 60px;
+      background: var(--primary);
+      margin: 10px 0 20px 0;
+      border-radius: 2px;
+    }
+
+    ul { margin-left: 20px; list-style: disc; }
+    p, li { margin-bottom: 10px; }
+
+    .skills {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .skill {
+      background: #e0e0e0;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .skill-bar {
+      height: 12px;
+      border-radius: 6px;
+      background: var(--primary);
+      width: 0;
+      animation: grow 1s forwards;
+    }
+
+    @keyframes grow {
+      to { width: var(--width); }
+    }
+
+    @media(max-width:600px){
+      header h1 { font-size: 2rem; }
+      header p { font-size: 1rem; }
+      .card { padding: 20px; }
+    }
+  </style>
 </head>
 <body>
 
 <header>
-    <h1>P O Madueke</h1>
-    <p>DevOps Engineer | Cloud & AWS Enthusiast</p>
-    <p class="contact">
-        Email: <a href="mailto:pomadueke@devopspomadueke.xyz">pomadueke@devopspomadueke.xyz</a> |
-        LinkedIn: <a href="https://www.linkedin.com/in/peter-madueke/" target="_blank">https://www.linkedin.com/in/peter-madueke/</a> |
-        GitHub: <a href="https://github.com/peterczu" target="_blank">github.com/peterczu</a>
-    </p>
+  <h1>Pomadueke [Your First Name]</h1>
+  <p>DevOps Engineer | Cloud & Web Deployment Specialist</p>
+  <p>
+    Website: <a href="https://devopspomadueke.xyz" target="_blank">devopspomadueke.xyz</a> |
+    Email: pomadueke@devopspomadueke@xyz.com |
+    LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a> |
+    GitHub: <a href="https://github.com/peterczu" target="_blank">github.com/peterczu</a>
+  </p>
 </header>
 
+<div class="container">
 
-<section>
-    <h2>About Me</h2>
-    <p>
-        I am a DevOps enthusiast with hands-on experience deploying web applications on AWS EC2, configuring Nginx, securing sites with SSL, and managing multi-site deployments. I am passionate about cloud technologies, automation, and continuous delivery.
-    </p>
-</section>
+  <div class="card" style="animation-delay:0.1s;">
+    <h2>Professional Summary</h2>
+    <div class="section-divider"></div>
+    <p>DevOps and cloud enthusiast with hands-on experience deploying and managing applications on Amazon Web Services. Skilled in Linux server management, CI/CD workflows, Node.js app deployment, Nginx configuration, domain and DNS management, and process automation. Adept at building scalable and secure environments for both static and dynamic web applications.</p>
+  </div>
 
-<section>
-    <h2>Skills</h2>
+  <div class="card" style="animation-delay:0.2s;">
+    <h2>Technical Skills</h2>
+    <div class="section-divider"></div>
+    <div class="skills">
+      <div>
+        <p><strong>Cloud & Servers:</strong> Amazon EC2, AWS Security Groups, Elastic IPs</p>
+        <div class="skill"><div class="skill-bar" style="--width:95%;"></div></div>
+      </div>
+      <div>
+        <p><strong>Server Management:</strong> Amazon Linux, Bash, SSH, sudo</p>
+        <div class="skill"><div class="skill-bar" style="--width:90%;"></div></div>
+      </div>
+      <div>
+        <p><strong>Web Deployment:</strong> Nginx, Static Hosting, SSL/HTTPS</p>
+        <div class="skill"><div class="skill-bar" style="--width:90%;"></div></div>
+      </div>
+      <div>
+        <p><strong>Programming & Apps:</strong> Node.js, Express, HTML, CSS, JS</p>
+        <div class="skill"><div class="skill-bar" style="--width:85%;"></div></div>
+      </div>
+      <div>
+        <p><strong>DevOps Tools:</strong> Git, GitHub, PM2</p>
+        <div class="skill"><div class="skill-bar" style="--width:85%;"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" style="animation-delay:0.3s;">
+    <h2>Professional Experience</h2>
+    <div class="section-divider"></div>
+    <h3>Independent DevOps Engineer / Cloud Developer — 2026</h3>
     <ul>
-        <li>AWS EC2, Elastic IP, Security Groups</li>
-        <li>Nginx multi-site hosting</li>
-        <li>SSL/HTTPS with Let’s Encrypt</li>
-        <li>Linux Server Administration</li>
-        <li>Git/GitHub + SSH deployment</li>
-        <li>CI/CD / Auto-deploy scripts</li>
-        <li>DNS & Domain Management</li>
-        <li>Basic Cloud Networking</li>
+      <li>Configured Amazon Linux EC2 instances for hosting multiple web applications.</li>
+      <li>Deployed static websites on multiple domains using Nginx.</li>
+      <li>Configured Node.js applications on subdomains with reverse proxy.</li>
+      <li>Implemented process persistence using PM2 for continuous uptime.</li>
+      <li>Managed DNS and domain propagation via Namecheap.</li>
+      <li>Enabled SSL/HTTPS for all sites using Let’s Encrypt.</li>
+      <li>Automated deployment workflows using Git and GitHub with SSH.</li>
     </ul>
-</section>
+  </div>
 
-<section>
+  <div class="card" style="animation-delay:0.4s;">
     <h2>Projects</h2>
+    <div class="section-divider"></div>
     <ul>
-        <li>Hosted 2 multi-site websites on a single EC2 instance with SSL.</li>
-        <li>Configured GitHub auto-deploy via SSH for seamless updates.</li>
-        <li>Built a professional static CV website hosted on AWS EC2.</li>
+      <li><strong>iDevOps Development Center</strong> — <a href="https://devopspomadueke.xyz" target="_blank">devopspomadueke.xyz</a>
+        <ul>
+          <li>Full-stack deployment including static and Node.js apps.</li>
+          <li>Nginx configured for multiple domains with HTTPS.</li>
+          <li>Continuous uptime ensured with PM2.</li>
+        </ul>
+      </li>
+      <li><strong>Node.js App on Subdomain</strong> — app.node.idevops2026.site
+        <ul>
+          <li>Node.js app deployed on subdomain with reverse proxy, SSL, and PM2.</li>
+        </ul>
+      </li>
+      <li><strong>Static Website Deployments</strong>
+        <ul>
+          <li>Two static websites deployed on separate domains with HTTPS.</li>
+        </ul>
+      </li>
     </ul>
-</section>
+  </div>
 
-<section>
-    <h2>Certifications / Education</h2>
-    <ul>
-        <li>AWS Certified Cloud Practitioner (In Progress)</li>
-        <li>Linux Server Administration Fundamentals</li>
-        <li>Web Hosting & Cloud Deployment Projects</li>
-    </ul>
-</section>
+  <div class="card" style="animation-delay:0.5s;">
+    <h2>Education</h2>
+    <div class="section-divider"></div>
+    <p>[Add your education details here]</p>
+  </div>
 
-<section>
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:pomadueke@devopspomadueke.xyz">pomadueke@devopspomadueke.xyz</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/peter-madueke/" target="_blank">https://www.linkedin.com/in/peter-madueke/</a></p>
-    <p>
+  <div class="card" style="animation-delay:0.6s;">
+    <h2>Certifications & Training</h2>
+    <div class="section-divider"></div>
+    <p>[Add online courses or certifications]</p>
+  </div>
+
+</div>
+
+<script>
+  // Fade-in cards on scroll (optional)
+  const cards = document.querySelectorAll('.card');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.style.opacity = 1;
+        entry.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.1 });
+  cards.forEach(card => observer.observe(card));
+</script>
+
+</body>
+</html>
